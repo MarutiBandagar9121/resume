@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maruti M Bandagar - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: white;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+                font-size: 12px;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        .contact-info {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1e40af;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .summary {
+            font-size: 15px;
+            line-height: 1.7;
+            text-align: justify;
+            color: #555;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+        }
+        
+        .skill-category {
+            margin: 8px;
+            display:flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-between;
+        }
+        
+        .skill-title {
+            font-weight: 700;
+            color: #1e40af;
+            display: inline-block;
+            min-width: 150px;
+        }
+        
+        .skill-list {
+            display: inline;
+            color: #555;
+        }
+        
+        .experience-item, .project-item, .education-item {
+            margin-bottom: 20px;
+        }
+        
+        .job-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .company-role {
+            font-weight: 700;
+            font-size: 16px;
+            color: #1e40af;
+        }
+        
+        .duration {
+            font-style: italic;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .job-description {
+            margin-left: 0;
+        }
+        
+        .job-description ul {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        
+        .job-description li {
+            margin-bottom: 5px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .project-title {
+            font-weight: 700;
+            font-size: 16px;
+            color: #1e40af;
+        }
+        
+        .project-subtitle {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        
+        .project-description ul {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        
+        .project-description li {
+            margin-bottom: 5px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+        
+        .degree {
+            font-weight: 700;
+            color: #1e40af;
+        }
+        
+        .institution {
+            color: #666;
+            margin-left: 8px;
+        }
+        
+        .education-details {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .print-btn:hover {
+            background: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn no-print" onclick="window.print()">Print / Save as PDF</button>
+    
+    <div class="header">
+        <h1 class="name">Maruti M Bandagar</h1>
+        <div class="contact-info">
+            Pune, Maharashtra | <a href="mailto:maruti.bandagar9121@gmail.com">maruti.bandagar9121@gmail.com</a> | +91-7755919112<br>
+            LinkedIn: <a href="https://linkedin.com/in/marutibandagar" target="_blank">linkedin.com/in/marutibandagar</a> | 
+            GitHub: <a href="https://github.com/MarutiBandagar9121" target="_blank">github.com/MarutiBandagar9121</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Summary</h2>
+        <p class="summary">
+            Full-stack Software Developer with hands-on experience in building scalable web applications and integrating AI tools to streamline development workflows. Proven ability to thrive in fast-paced startup environments, consistently delivering robust features from concept to deployment. A proactive and adaptable team player with a strong passion for learning and embracing emerging technologies.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <span class="skill-title">Languages:</span>
+                <span class="skill-list">Java, JavaScript, TypeScript, PHP, C++, Python, HTML, CSS</span>
+            </div>
+            <div class="skill-category">
+                <span class="skill-title">Frameworks & Libraries:</span>
+                <span class="skill-list">Angular, React, Spring Boot, Laravel, FastAPI, Tailwind CSS, Bootstrap</span>
+            </div>
+            <div class="skill-category">
+                <span class="skill-title">Databases:</span>
+                <span class="skill-list">MySQL, PostgreSQL, MongoDB</span>
+            </div>
+            <div class="skill-category">
+                <span class="skill-title">Dev Tools:</span>
+                <span class="skill-list">Git, GitHub Actions, Docker, Postman</span>
+            </div>
+            <div class="skill-category">
+                <span class="skill-title">Cloud & Other:</span>
+                <span class="skill-list">REST APIs, VPS Hosting, SSL Setup, GCP (basic), AWS (basic), Nginx</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Work Experience</h2>
+        
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="company-role">Estatehub — Software Developer</div>
+                <div class="duration">Sep 2024 – Present</div>
+            </div>
+            <div class="job-description">
+                <ul>
+                    <li>Led migration of legacy codebase to latest versions, ensuring application readiness for deployment.</li>
+                    <li>Integrated CC Avenue payment gateway for a key product, enhancing transaction capabilities.</li>
+                    <li>Developed an AI-based application for thesis document analysis, contributing to an innovative research project.</li>
+                    <li>Managed application deployments and server infrastructure on GCP and AWS.</li>
+                    <li>Collaborated on requirement gathering and feature releases, aligning development with business needs.</li>
+                    <li>Designed and implemented an automated invoice generation system within the application.</li>
+                    <li>Executed ETL scripting to extract, structure, and store data from large volumes of Excel files.</li>
+                    <li>Performed web crawling for research purposes, gathering thesis documents from various online sources.</li>
+                    <li>Optimized database query performance in Spring Boot application by resolving N+1 query issues, resulting in significantly reduced response times and enhanced overall system performance.</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="company-role">Estatehub — Web Developer Intern</div>
+                <div class="duration">May 2024 – Aug 2024</div>
+            </div>
+            <div class="job-description">
+                <ul>
+                    <li>Assisted in migrating existing web application codebase to current versions.</li>
+                    <li>Enhanced UI/UX and built various new pages according to project requirements.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2 class="section-title">Projects</h2>
+        
+        <div class="project-item">
+            <div class="project-header">
+                <div class="project-title">Animeflix</div>
+            </div>
+            <div class="project-subtitle">Full-stack Anime Streaming Platform</div>
+            <div class="project-description">
+                <ul>
+                    <li>Developed a full-stack anime streaming platform using React, Tailwind CSS, PHP, Apache, and PostgreSQL.</li>
+                    <li>Implemented secure user authentication with OTP-based email verification.</li>
+                    <li>Designed a responsive UI with features for browsing, detailed viewing, and video streaming.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-header">
+                <div class="project-title">Milk Mart</div>
+            </div>
+            <div class="project-subtitle">Dairy Management System</div>
+            <div class="project-description">
+                <ul>
+                    <li>Built a comprehensive dairy management solution with PHP and MySQL.</li>
+                    <li>Developed an admin dashboard for streamlined inventory, order, and product management.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-header">
+                <div class="project-title">Gurukul Education</div>
+            </div>
+            <div class="project-subtitle">Freelance Project</div>
+            <div class="project-description">
+                <ul>
+                    <li>Developed a dynamic informational website using Astro framework (gurukuleducation.org).</li>
+                    <li>Designed multi-page site including Home, About Us, Contact, Gallery, and Testimonials.</li>
+                    <li>Deployed site and managed SSL configuration with Let's Encrypt.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-header">
+                <div class="project-title">Magic Prints Media</div>
+            </div>
+            <div class="project-subtitle">Freelance Project</div>
+            <div class="project-description">
+                <ul>
+                    <li>Built a professional WordPress website for client (magicprintsmedia.com).</li>
+                    <li>Designed key pages (Home, About Us, Services, Contact) and configured hosting and professional email.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="education-item">
+            <div class="education-header">
+                <div>
+                    <span class="degree">BSc in Computer Science</span>
+                    <span class="institution">| Savitribai Phule Pune University</span>
+                </div>
+                <div class="education-details">2021–2024 | CGPA: 9.11</div>
+            </div>
+        </div>
+        
+        <div class="education-item">
+            <div class="education-header">
+                <div>
+                    <span class="degree">HSC</span>
+                    <span class="institution">| Nowrosjee Wadia College</span>
+                </div>
+                <div class="education-details">2018–2020 | 72%</div>
+            </div>
+        </div>
+        
+        <div class="education-item">
+            <div class="education-header">
+                <div>
+                    <span class="degree">SSC</span>
+                    <span class="institution">| KCTVN School</span>
+                </div>
+                <div class="education-details">Completed 2018 | 86%</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

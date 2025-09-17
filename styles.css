@@ -59,7 +59,7 @@ body {
 }
 
 .section-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: #1e40af;
   border-bottom: 2px solid #e5e7eb;
@@ -68,12 +68,12 @@ body {
 }
 
 .section-subtitle {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 200;
 }
 
 .info-text {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.8;
   font-weight: 400;
   text-align: justify;
